@@ -23,7 +23,7 @@ a{
     --color-secondary: #eb5757;
     --black: #000;
     --White: #fff
-    --grey-100: #333333;
+    --grey-100: #373737;
     --grey-50: #828282;
     --grey-30: #a0a0a0;
     --grey-20: #E0E0E0;
