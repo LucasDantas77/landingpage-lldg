@@ -1,22 +1,25 @@
 import React from "react";
-import { IoLogoInstagram } from "react-icons/io";
-import { BiLogoGmail } from "react-icons/bi";
 import { MdAlternateEmail } from "react-icons/md";
+import { FooterContainer, IconGmail, IconInstagram } from "./styled";
 
 const FootterPage = () => {
   return (
-    <footer>
-      <p>
-        LLDG
-        <MdAlternateEmail />
-        2024
-      </p>
+    <>
+      <FooterContainer>
+        <div>
+          <p>
+            LLDG
+            <MdAlternateEmail />
+            2024
+          </p>
 
-      <div>
-        <IoLogoInstagram />
-        <BiLogoGmail />
-      </div>
-    </footer>
+          <span>
+            <IconInstagram/>
+            <IconGmail/>
+          </span>
+        </div>
+      </FooterContainer>
+    </>
   );
 };
 
