@@ -47,6 +47,7 @@ export const DivBtn = styled.div`
 `;
 
 export const LinksMobile = styled.a`
-  font-size: 14px;
+  font-size: 13px;
   color: var(--white);
+
 `;
