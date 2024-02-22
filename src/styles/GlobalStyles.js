@@ -6,7 +6,6 @@ padding: 0;
 margin: 0;
 list-style: none;
 font-family: sans-serif;
-background-color:#373737;
 }
 
 button{
