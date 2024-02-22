@@ -1,5 +1,5 @@
 import React from "react";
-import Wpp from '../../assets/logoWpp.jpg'
+import Wpp from '../../assets/whatsaaplogo.png';
 import { ImageBtn } from "./styledButton";
 export const ButtonContact = ()=>{
     return(
