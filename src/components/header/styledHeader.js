@@ -5,6 +5,9 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  border: 1px solid gray;
+  border-radius: 15px;
+;
 
   @media (max-width: 768px) {
     flex-direction: column;
