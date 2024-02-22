@@ -3,12 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import FootterPage from './components/footer/footerPage'
+import HeaderPage from './components/header/headerPage'
+import ButtonContact from './components/whatsaapButton/whattsButton'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <HeaderPage/>
+    <ButtonContact/>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
