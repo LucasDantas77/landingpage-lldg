@@ -28,10 +28,25 @@ export const Header = styled.header`
 `;
 
 export const DivInfos = styled.div`
-  display: flex;
+  display: none;
   gap: 20px;
   a {
     font-size: 14px;
     color: var(--white);
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`;
+
+export const DivBtn = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const LinksMobile = styled.a`
+  font-size: 14px;
+  color: var(--white);
 `;
