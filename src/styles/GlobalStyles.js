@@ -11,7 +11,9 @@ font-family: sans-serif;
 button{
     cursor: pointer;
 }
-
+body{
+    background-color:#373737;
+}
 
 a{
     cursor: pointer;
