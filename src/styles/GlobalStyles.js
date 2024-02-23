@@ -16,6 +16,9 @@ button{
 a{
     cursor: pointer;
 }
+p{
+    color:white;
+}
 
 :root{
     --color-primary: #27ae60;

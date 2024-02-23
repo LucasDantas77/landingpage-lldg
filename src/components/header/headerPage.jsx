@@ -60,6 +60,7 @@ const HeaderPage = () => {
         )}
       </DivBtn>
     </Header>
+    
   );
 };
 

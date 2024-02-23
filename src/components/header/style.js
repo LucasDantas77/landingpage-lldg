@@ -19,7 +19,7 @@ export const Header = styled.header`
   }
 
   @media (min-width: 768px) {
-    position: fixed;
+    // position: fixed;
     left: 6%;
 
     border-bottom-left-radius: 10px;
