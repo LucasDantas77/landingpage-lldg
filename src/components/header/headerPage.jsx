@@ -44,18 +44,18 @@ const HeaderPage = () => {
               position: "absolute",
               top: "12%",
               left: 0,
-              width: "93.6%",
+              width: "100%",
+              height: "10%",
               backgroundColor: "#373737",
               boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
               borderbottomleftradius: "10px",
               borderbottomrightradius: "10px",
-              padding: "10px",
               ...divInfosAnimation,
             }}
           >
             <LinksMobile href="">Sobre-Nós</LinksMobile>
             <LinksMobile href="">Contatos</LinksMobile>
-            <LinksMobile href="">Siga-Nós</LinksMobile>
+            <LinksMobile href="">Siga-Nos</LinksMobile>
           </animated.div>
         )}
       </DivBtn>

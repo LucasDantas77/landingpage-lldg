@@ -11,9 +11,7 @@ font-family: sans-serif;
 button{
     cursor: pointer;
 }
-body{
-    background-color:#373737;
-}
+
 
 a{
     cursor: pointer;
@@ -38,5 +36,5 @@ p{
     --sucess: #168821;
     --information: #155aca
 }
-`
+`;
 export default GlobalStyles;
