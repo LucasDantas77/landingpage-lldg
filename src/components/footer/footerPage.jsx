@@ -1,24 +1,34 @@
 import React from "react";
-import { MdAlternateEmail } from "react-icons/md";
-import { FooterContainer, IconGmail, IconInstagram } from "./styled";
-
+import IconInsta from "../../assets/logoInsta.png";
+import IconEmail from "../../assets/iconEmail.png";
+import {ImageLogo} from './styled'
 const FootterPage = () => {
   return (
     <>
-      <FooterContainer>
+      <footer>
         <div>
-          <p>
-            LLDG
-            <MdAlternateEmail />
-            2024
-          </p>
-
-          <span>
-            <IconInstagram/>
-            <IconGmail/>
-          </span>
+          <h3>LLDG</h3>
+          <p>@2024</p>
         </div>
-      </FooterContainer>
+        <div>
+          <p>Siga e entre em contato!</p>
+          <div>
+            <a href="">
+              <ImageLogo src={IconInsta} alt="logo instagram" />
+            </a>
+
+            <a href="">
+              <ImageLogo src={IconEmail} alt="logo email" />
+            </a>
+          </div>
+        </div>
+        <div>
+          <p>Desenvolvido por LLDG</p>
+
+          <p>lldgcontato@gmail.com</p>
+          <p>Instagram: @lldgcontato</p>
+        </div>
+      </footer>
     </>
   );
 };
