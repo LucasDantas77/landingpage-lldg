@@ -1,11 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 *{
 padding: 0;
 margin: 0;
 list-style: none;
 font-family: sans-serif;
+
+}
+
+body{
+    background-color: #000;
 }
 
 button{
@@ -15,6 +20,8 @@ button{
 
 a{
     cursor: pointer;
+    color: #f5f5f5;
+    text-decoration: none;
 }
 p{
     color:white;

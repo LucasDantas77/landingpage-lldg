@@ -6,8 +6,11 @@ export const Header = styled.header`
   justify-content: space-around;
   width: 100vw;
   max-width: 1200px;
+  position: fixed;
+  top: 0%;
   gap: 200px;
   height: 12%;
+  color: #fff;
   align-items: center;
   background-color: #373737;
 
@@ -48,6 +51,4 @@ export const DivBtn = styled.div`
 
 export const LinksMobile = styled.a`
   font-size: 13px;
-  color: var(--white);
-
 `;

@@ -4,21 +4,18 @@ import { MainPage } from "./style";
 import { Introducao } from "../components/Introducao/Intro";
 import BodyPage from "../components/Templates/templatesWeb";
 
-
 const HomePage = () => {
   return (
-  // <MainPage>
-      <>
-      <HeaderPage />
-      <Introducao/> 
-      <ButtonContact />
-       components
-      <BodyPage/>
-       {/* <FootterPage />  */}
-      </>
+    <MainPage>
+      
+        <HeaderPage />
+        <Introducao />
+        <ButtonContact />
 
+        
+        {/* <FootterPage />  */}
+      
     </MainPage>
-
   );
 };
 
