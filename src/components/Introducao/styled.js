@@ -36,7 +36,6 @@ align-content: center;
 justify-content: center;
 gap: 3rem;
 text-align: center;
-position: relative;
 flex-direction: column;
 width: 640px;
 height:450px;
@@ -44,7 +43,7 @@ margin-inline: 330px;
 `;
 
 export const SectionContainer = styled.section`
-  max-width: 100%; /* Alterado para 100% para tornar responsivo */
+  max-width: 100%; 
   align-items: center;
   align-content: center;
   display: flex;

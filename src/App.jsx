@@ -1,11 +1,10 @@
-import HomePage from "./pages/HomePage";
 import GlobalStyles from "./styles/GlobalStyles";
-
+import { RoutesMain } from "./routes/routes";
 function App() {
   return (
     <>
       <GlobalStyles />
-      <HomePage />
+      <RoutesMain/> 
     </>
   );
 }

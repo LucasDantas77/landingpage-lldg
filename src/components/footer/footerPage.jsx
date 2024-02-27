@@ -1,16 +1,16 @@
 import React from "react";
 import IconInsta from "../../assets/logoInsta.png";
 import IconEmail from "../../assets/iconEmail.png";
-import {ImageLogo} from './styled'
+import {FooterContainer, ImageLogo,DivInfo,DivContacts, DivContactsTwo} from './styled'
 const FootterPage = () => {
   return (
     <>
-      <footer>
-        <div>
+      <FooterContainer>
+        <DivInfo>
           <h3>LLDG</h3>
           <p>@2024</p>
-        </div>
-        <div>
+        </DivInfo>
+        <DivContacts>
           <p>Siga e entre em contato!</p>
           <div>
             <a href="">
@@ -21,14 +21,14 @@ const FootterPage = () => {
               <ImageLogo src={IconEmail} alt="logo email" />
             </a>
           </div>
-        </div>
-        <div>
+        </DivContacts>
+        <DivContactsTwo>
           <p>Desenvolvido por LLDG</p>
 
           <p>lldgcontato@gmail.com</p>
           <p>Instagram: @lldgcontato</p>
-        </div>
-      </footer>
+        </DivContactsTwo>
+      </FooterContainer>
     </>
   );
 };
