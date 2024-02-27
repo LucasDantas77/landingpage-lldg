@@ -29,7 +29,7 @@ const HeaderPage = () => {
       <DivInfos>
         <a href="">Sobre-Nós</a>
         <a href="">Contatos</a>
-        <a href="">Siga-Nós</a>
+        <a href="">Siga-Nos</a>
       </DivInfos>
       <DivBtn onClick={handleClick} style={{ cursor: "pointer" }}>
         <AnimatedRiApps2Line style={iconAnimation} size={30} />
@@ -42,20 +42,20 @@ const HeaderPage = () => {
               textAlign: "center",
               gap: "15px",
               position: "absolute",
-              top: "12%",
+              top: "100%",
               left: 0,
-              width: "93.6%",
+              width: "100%",
+              height: "60%",
               backgroundColor: "#373737",
               boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
               borderbottomleftradius: "10px",
               borderbottomrightradius: "10px",
-              padding: "10px",
               ...divInfosAnimation,
             }}
           >
-            <LinksMobile href="">Sobre-Nós</LinksMobile>
-            <LinksMobile href="">Contatos</LinksMobile>
-            <LinksMobile href="">Siga-Nós</LinksMobile>
+            <LinksMobile href="#">Sobre-Nós</LinksMobile>
+            <LinksMobile href="#">Contatos</LinksMobile>
+            <LinksMobile href="#">Siga-Nos</LinksMobile>
           </animated.div>
         )}
       </DivBtn>

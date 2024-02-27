@@ -1,23 +1,25 @@
 import HeaderPage from "../components/header/headerPage";
-import FootterPage from "../components/footer/footerPage";
 import ButtonContact from "../components/whatsaapButton/whattsButton";
 import { MainPage } from "./style";
 import { Introducao } from "../components/Introducao/Intro";
-import BodyPage from "../components/Templates/templatesWeb";
-import CarrosselPage from "../components/Templates/templatesWeb";
+import { Carousel } from "../components/carrosel/carrosel";
 
-
+const images = [
+  "./src/assets/template1.png",
+  "./src/assets/TEMPLATE2.png",
+  "./src/assets/template3.png",
+  "./src/assets/template4.png",
+  "./src/assets/template5.png",
+];
 const HomePage = () => {
   return (
-  // <MainPage>
-      <>
+    <MainPage>
       <HeaderPage />
-      <Introducao/> 
+      <Introducao />
+      <Carousel images={images} />
       <ButtonContact />
-    
-       {/* <FootterPage />  */}
-      </>
-
+      {/* <FootterPage />  */}
+    </MainPage>
   );
 };
 

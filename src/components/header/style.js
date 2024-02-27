@@ -6,8 +6,11 @@ export const Header = styled.header`
   justify-content: space-around;
   width: 100vw;
   max-width: 1200px;
+  position: fixed;
+  top: 0%;
   gap: 200px;
   height: 12%;
+  color: #fff;
   align-items: center;
   background-color: #373737;
   position:fixed;
@@ -20,7 +23,7 @@ export const Header = styled.header`
     border-radius: 50%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     // position: fixed;
     left: 6%;
 
@@ -49,6 +52,5 @@ export const DivBtn = styled.div`
 `;
 
 export const LinksMobile = styled.a`
-  font-size: 14px;
-  color: var(--white);
+  font-size: 13px;
 `;

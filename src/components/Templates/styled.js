@@ -1,19 +1,13 @@
-import styled from 'styled-components';
-import Slider from "react-slick";
-
-export const StyledSlider = styled(Slider)`
-width:80%;
-max-width:600px;
-heigth:25px;
-`
+import styled from "styled-components";
 export const Section = styled.div`
-  position: relative; 
+  position: relative;
+  width: 90%;
+  max-width: 600px;
 `;
 
 export const TemplateContainer = styled.div`
-width: 90%;
-max-width:600px; 
-margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 `;
 
 export const TemplateImage = styled.img`
@@ -21,8 +15,6 @@ export const TemplateImage = styled.img`
   height: auto;
 `;
 
-
 export const NavigationButton = styled.button`
- 
   margin-right: 10px;
 `;

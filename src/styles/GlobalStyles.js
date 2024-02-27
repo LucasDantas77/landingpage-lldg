@@ -1,22 +1,27 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyles = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 *{
 padding: 0;
 margin: 0;
 list-style: none;
 font-family: sans-serif;
+
+}
+
+body{
+    background-color: #000;
 }
 
 button{
     cursor: pointer;
 }
-body{
-    background-color:#373737;
-}
+
 
 a{
     cursor: pointer;
+    color: #f5f5f5;
+    text-decoration: none;
 }
 p{
     color:white;
@@ -38,5 +43,5 @@ p{
     --sucess: #168821;
     --information: #155aca
 }
-`
+`;
 export default GlobalStyles;
