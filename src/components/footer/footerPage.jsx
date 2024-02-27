@@ -1,32 +1,32 @@
 import React from "react";
 import IconInsta from "../../assets/logoInsta.png";
 import IconEmail from "../../assets/iconEmail.png";
-import {FooterContainer, ImageLogo,DivInfo,DivContacts, DivContactsTwo} from './styled'
+import {FooterContainer, ImageLogo,DivInfo,DivContacts, DivContactsTwo, H3Style, PTextStyled} from './styled'
 const FootterPage = () => {
   return (
     <>
       <FooterContainer>
         <DivInfo>
-          <h3>LLDG</h3>
-          <p>@2024</p>
+          <H3Style>LLDG</H3Style>
+          <PTextStyled>@ 2024</PTextStyled>
         </DivInfo>
         <DivContacts>
-          <p>Siga e entre em contato!</p>
+          <PTextStyled>Siga e entre em contato!</PTextStyled>
           <div>
-            <a href="">
+            {/* <a href="">
               <ImageLogo src={IconInsta} alt="logo instagram" />
             </a>
 
             <a href="">
               <ImageLogo src={IconEmail} alt="logo email" />
-            </a>
+            </a> */}
           </div>
         </DivContacts>
         <DivContactsTwo>
-          <p>Desenvolvido por LLDG</p>
+          <PTextStyled>Desenvolvido por LLDG</PTextStyled>
 
-          <p>lldgcontato@gmail.com</p>
-          <p>Instagram: @lldgcontato</p>
+          <PTextStyled>lldgcontato@gmail.com</PTextStyled>
+          <PTextStyled>Instagram: @lldgcontato</PTextStyled>
         </DivContactsTwo>
       </FooterContainer>
     </>
