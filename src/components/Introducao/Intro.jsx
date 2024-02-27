@@ -1,6 +1,5 @@
 import React from "react";
 import LogoLLDG from "../../assets/logolldg.jpg";
-import templateOne from "../../assets/template1.png";
 import {
   Container,
   ImgLogo,

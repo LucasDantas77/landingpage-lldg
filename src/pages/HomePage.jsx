@@ -5,7 +5,7 @@ import { Introducao } from "../components/Introducao/Intro";
 import { Carousel } from "../components/carrosel/carrosel";
 
 const images = [
-  "./src/assets/template1.png",
+  "./src/assets/template1.jpg",
   "./src/assets/TEMPLATE2.png",
   "./src/assets/template3.png",
   "./src/assets/template4.png",
