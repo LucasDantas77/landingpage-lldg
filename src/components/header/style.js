@@ -21,7 +21,7 @@ export const Header = styled.header`
     border-radius: 50%;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     // position: fixed;
     left: 6%;
 

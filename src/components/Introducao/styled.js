@@ -1,26 +1,5 @@
 import styled from "styled-components";
 
-// export const ImgLogo = styled.img`
-// width: 250px;
-// height: 230px;
-// border-radius: 25px;
-// `;
-
-// export const Container = styled.div`
-// margin-top: 150px;
-// display: flex;
-// align-content: center;
-// justify-content: center;
-// gap: 1rem;
-// `;
-
-// export const SectionContainer = styled.section`
-// max-width: 30%;
-// align-items: center;
-// align-content: center;
-// display: flex;
-// flex: 1;
-// `
 
 export const ImgLogo = styled.img`
   width: 50%; /* Alterado para 100% para tornar responsivo */
@@ -49,7 +28,7 @@ export const SectionContainer = styled.section`
   justify-content: space-around;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     flex-direction: row;
   }
 `;
