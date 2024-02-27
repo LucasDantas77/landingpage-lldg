@@ -52,6 +52,7 @@ export const Text = styled.p`
   line-height: 20px;
   @media (min-width: 768px) {
     font-size: 18px;
+    line-height: 25px;
   }
 `;
 export const HighlightedText = styled(Text)`
