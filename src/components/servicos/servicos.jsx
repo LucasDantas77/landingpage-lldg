@@ -1,20 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import HeaderPage from "../header/headerPage";
-import { SectionContent, DivService, BackButton } from "./style";
+import {
+  SectionContent,
+  DivService,
+  BackButton,
+  H2Title,
+  DivContentImagens,
+  ImagesService,Ptext
+} from "./style";
 import { IoIosArrowBack } from "react-icons/io";
 import FootterPage from "../footer/footerPage";
-
+import market from "../../assets/marketing.jpg";
+import dev from "../../assets/desenv.jpg";
+import manu from "../../assets/manutencao.png";
+import respon from "../../assets/responsive.jpg";
+import siste from "../../assets/gerenciamento.jpg";
+import { LoadingSpinner } from "../Loading/load";
 export const ServicesPage = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleButtonClick = () => {
+    setIsLoading(true);
+
+    
+    setTimeout(() => {
+      setIsLoading(false);
+     
+      window.location.href = '/';
+    }, 5000);
+  }
   return (
     <>
       <HeaderPage />
 
       <SectionContent>
-        <BackButton>
+        {/* <BackButton>
           <IoIosArrowBack />
-        </BackButton>
+        </BackButton> */}
+        <BackButton onClick={handleButtonClick} disabled={isLoading}>
+        {isLoading ? 'Carregando...' : <IoIosArrowBack />}
+      </BackButton>
+      {isLoading && (
+        <LoadingSpinner/>
+      )}
         <DivService>
-          <h2>Por que ter uma Landing Page?</h2>
+          <H2Title>Por que ter uma Landing Page?</H2Title>
           <p>
             <strong>Maximize Suas Conversões com uma Landing Page</strong>
             Você já se perguntou por que grandes empresas usam Landing Pages?
@@ -38,9 +68,9 @@ export const ServicesPage = () => {
           </p>
         </DivService>
         <DivService>
-          <h2>
+          <H2Title>
             <strong>A Importância do Tráfego Pago</strong>
-          </h2>
+          </H2Title>
           <p>
             Investir em tráfego pago é como acelerar o crescimento do seu
             negócio online. Imagine sua loja preferida: ela paga por anúncios
@@ -60,8 +90,58 @@ export const ServicesPage = () => {
             para dar um impulso ao seu negócio?
           </p>
         </DivService>
-        <FootterPage/>
+        <H2Title> Quais serviços prestamos?</H2Title>
+        <H2Title>Marketing Digital:</H2Title>
+        <DivContentImagens>
+          <ImagesService src={market} />
+          <Ptext>
+            Conquiste visibilidade online com nossas estratégias de marketing
+            digital abrangentes. Desde otimização de mecanismos de busca (SEO)
+            até campanhas nas redes sociais, estamos focados em aumentar sua
+            presença e engajamento online.
+          </Ptext>
+        </DivContentImagens>
+        <H2Title>Desenvolvimento de Sites:</H2Title>
+        <DivContentImagens>
+          <ImagesService src={dev} />
+          <Ptext>
+            Criamos experiências online envolventes e intuitivas. Nossa equipe
+            de desenvolvimento de sites oferece desde sites institucionais a
+            plataformas e-commerce, garantindo design atraente e funcionalidade
+            de alto nível.
+          </Ptext>
+        </DivContentImagens>
+        <H2Title>Manutenção de Sites:</H2Title>
+        <DivContentImagens>
+          <ImagesService src={manu} />
+          <Ptext>
+            Mantenha seu site atualizado e operacional com nossos serviços de
+            manutenção. Lidamos com atualizações, correções de bugs e garantimos
+            que seu site esteja sempre otimizado para o melhor desempenho.
+          </Ptext>
+        </DivContentImagens>
+        <H2Title>Sites Web Responsivos e Landing Pages:</H2Title>
+        <DivContentImagens>
+          <ImagesService src={respon} />
+          <Ptext>
+            Proporcione uma experiência consistente em todos os dispositivos.
+            Desenvolvemos sites responsivos e landing pages que se adaptam
+            perfeitamente a desktops, tablets e smartphones, maximizando o
+            alcance e a acessibilidade.
+          </Ptext>
+        </DivContentImagens>
+        <H2Title>Sistema para Gerenciamento de Negócios:</H2Title>
+        <DivContentImagens>
+          <ImagesService src={siste} />
+          <Ptext>
+            Simplifique suas operações com nossas soluções personalizadas de
+            gestão empresarial. Desde sistemas de CRM até ferramentas de
+            automação, ajudamos a otimizar processos e aprimorar a eficiência
+            operacional.
+          </Ptext>
+        </DivContentImagens>
       </SectionContent>
+      <FootterPage />
     </>
   );
 };

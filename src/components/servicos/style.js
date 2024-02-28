@@ -3,11 +3,9 @@ import styled from 'styled-components';
 export const SectionContent = styled.section`
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    width: 1200px;
-    max-width: 100%;
+    width: 100%;
     margin-top: 100px;
-    gap:15px;
+    gap: 40px;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -23,6 +21,11 @@ export const SectionContent = styled.section`
     font-size: 16px;
 }
 
+`;
+export const H2Title = styled.h2`
+font-family: "Rubik", sans-serif;
+font-optical-sizing: auto;
+color: #ffff;
 `;
 export const DivService = styled.div`
 display: flex;
@@ -55,4 +58,37 @@ export const BackButton = styled.button`
     font-size: 18px;
     padding: 8px;
   }
+`;
+export const DivContentImagens = styled.div`
+display: flex;
+gap: 55px;
+width: 60%;
+align-items: center;
+@media only screen and (max-width: 600px) {
+  width:80%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+}
+`;
+
+export const Ptext = styled.p`
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    color: #ffff;
+    font-weight: 400;
+    line-height: 30px;
+`;
+
+export const ImagesService = styled.img`
+width: 250px;
+max-width: 40%;
+border-radius:5px;
+object-fit: cover;
+@media only screen and (max-width: 600px) {
+  width: 260px;
+  max-width: 80%;
+  border-radius: 5px;
+  object-fit: cover;
+}
 `;

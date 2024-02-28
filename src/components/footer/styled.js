@@ -1,20 +1,27 @@
 import styled from "styled-components";
+import { CiInstagram } from "react-icons/ci";
+import { MdOutlineMail } from "react-icons/md";
 
-export const ImageLogo = styled.img`
-  width: 35%;
-  max-width: 300px;
-  height: 50px;
-  border-radius: 100%;
+
+export const IconInstagram = styled(CiInstagram)`
+width: 35%;
+max-width: 300px;
+height: 50px;
+border-radius: 100%;
+`;
+export const IconEmail = styled(MdOutlineMail)`
+width: 35%;
+max-width: 300px;
+height: 50px;
+border-radius: 100%;
 `;
 
 export const FooterContainer = styled.footer`
-  width: 100%;
-  max-width: 1330px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15px;
-  border: 1px solid white;
-  border-radius: 2rem;
+width: 100%;
+height: 220px;
+display: flex;
+justify-content: space-around;
+border-top: 1px solid white;
   margin: 0 auto;
   div > h3 > p {
     font-family: "Rubik", sans-serif;
@@ -24,8 +31,12 @@ export const FooterContainer = styled.footer`
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-    width: 85%;
+    width: 109%;
     margin-left: -2rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
   }
 `;
 export const DivInfo = styled.div`
@@ -48,22 +59,21 @@ export const DivContacts = styled.div`
 `;
 
 export const DivContactsTwo = styled.div`
-  margin-top: 12px;
   display: flex;
   flex-direction: column;
-  gap: 6%;
+  text-align: center;
+  margin-top: 11px;
+  justify-content: center;
+  gap:5%
 `;
 export const H3Style = styled.h3`
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    color: #ffff;
-  
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  color: #ffff;
 `;
 
 export const PTextStyled = styled.p`
-
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    color: #ffff;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  color: #ffff;
 `;
-
