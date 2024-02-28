@@ -4,6 +4,7 @@ import { MainPage } from "./style";
 import { Introducao } from "../components/Introducao/Intro";
 import { Carousel } from "../components/carrosel/carrosel";
 import FootterPage from "../components/footer/footerPage";
+import { Sobre } from "../components/sobre";
 
 const HomePage = () => {
   const images = [
@@ -18,8 +19,9 @@ const HomePage = () => {
       <HeaderPage />
       <Introducao />
       <Carousel images={images} />
+      <Sobre />
       <ButtonContact />
-      <FootterPage /> 
+      <FootterPage />
     </MainPage>
   );
 };

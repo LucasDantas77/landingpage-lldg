@@ -12,8 +12,7 @@ export const Header = styled.header`
   color: #fff;
   align-items: center;
   background-color: #373737;
-  position:fixed;
-  top:0;
+  z-index: 1;
 
   img {
     width: 20%;

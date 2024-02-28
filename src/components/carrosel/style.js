@@ -58,15 +58,11 @@ export const Button = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 20px; /* Ajuste o tamanho do botão conforme necessário */
+  font-size: 20px; 
   color: yellow;
-  z-index: 1; /* Certifica-se de que os botões estejam sobre as imagens */
-  ${(props) =>
-    props.direction === "left"
-      ? "left: 5px;"
-      : "right: 5px;"} /* Ajuste a posição conforme necessário */
 
-@media(min-width: 768px) {
+  ${(props) => (props.direction === "left" ? "left: 5px;" : "right: 5px;")}
+  @media(min-width: 768px) {
     margin-top: 290px;
     font-size: 60px;
     ${(props) =>
