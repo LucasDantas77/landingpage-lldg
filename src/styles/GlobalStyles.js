@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
 padding: 0;
 margin: 0;
 list-style: none;
-font-family: sans-serif;
+font-family: 'Montserrat', sans-serif;
 
 }
 

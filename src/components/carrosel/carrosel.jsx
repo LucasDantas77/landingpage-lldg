@@ -39,16 +39,19 @@ export const Carousel = ({ images }) => {
         {"<"}
       </Button>
       <CarouselContainer>
-        <CarouselWrapper translateValue={translateValue}>
-          {images.map((image, index) => (
-            <Slide
-              className="slide"
-              key={index}
-              src={image}
-              alt={`Slide ${index}`}
-            />
-          ))}
-        </CarouselWrapper>
+        <h2>Nossos Templates Promocionais</h2>
+        <div>
+          <CarouselWrapper translateValue={translateValue}>
+            {images.map((image, index) => (
+              <Slide
+                className="slide"
+                key={index}
+                src={image}
+                alt={`Slide ${index}`}
+              />
+            ))}
+          </CarouselWrapper>
+        </div>
       </CarouselContainer>
       <Button direction="right" onClick={goToNextSlide}>
         {">"}
