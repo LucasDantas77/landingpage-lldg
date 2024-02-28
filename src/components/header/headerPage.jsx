@@ -3,6 +3,7 @@ import { DivBtn, DivInfos, Header, LinksMobile } from "./style";
 import { RiApps2Line } from "react-icons/ri";
 import { useSpring, animated } from "react-spring";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const AnimatedRiApps2Line = animated(RiApps2Line);
 
@@ -29,7 +30,9 @@ const HeaderPage = () => {
       <DivInfos>
         <a href="">Sobre-Nós</a>
         <a href="">Contatos</a>
-        <a href="">Siga-Nos</a>
+        <Link to="/servicos">
+          <a href="">Nossos Serviços</a>
+        </Link>
       </DivInfos>
       <DivBtn onClick={handleClick} style={{ cursor: "pointer" }}>
         <AnimatedRiApps2Line style={iconAnimation} size={30} />
@@ -55,12 +58,11 @@ const HeaderPage = () => {
           >
             <LinksMobile href="#">Sobre-Nós</LinksMobile>
             <LinksMobile href="#">Contatos</LinksMobile>
-            <LinksMobile href="#">Siga-Nos</LinksMobile>
+            <LinksMobile href="#">Nossos Serviços</LinksMobile>
           </animated.div>
         )}
       </DivBtn>
     </Header>
-    
   );
 };
 

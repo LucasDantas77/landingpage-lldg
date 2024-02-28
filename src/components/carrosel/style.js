@@ -12,7 +12,6 @@ export const Container = styled.section`
   }
 `;
 export const CarouselContainer = styled.div`
-  position: relative;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -35,8 +34,8 @@ export const CarouselContainer = styled.div`
 
   @media (min-width: 768px) {
     font-size: 28px;
-    h2{
-        font-size: 25px;
+    h2 {
+      font-size: 25px;
     }
   }
 `;
