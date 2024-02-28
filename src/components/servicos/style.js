@@ -24,6 +24,11 @@ export const SectionContent = styled.section`
 }
 
 `;
+export const H2Title = styled.h2`
+font-family: "Rubik", sans-serif;
+font-optical-sizing: auto;
+color: #ffff;
+`;
 export const DivService = styled.div`
 display: flex;
 flex-direction: column;

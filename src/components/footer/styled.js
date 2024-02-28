@@ -17,13 +17,11 @@ border-radius: 100%;
 `;
 
 export const FooterContainer = styled.footer`
-  width: 100%;
-  max-width: 1330px;
-  height: 220px;
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15px;
-  border: 1px solid white;
+width: 100%;
+height: 220px;
+display: flex;
+justify-content: space-around;
+border-top: 1px solid whitd white;
   margin: 0 auto;
   div > h3 > p {
     font-family: "Rubik", sans-serif;

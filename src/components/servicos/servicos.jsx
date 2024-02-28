@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderPage from "../header/headerPage";
-import { SectionContent, DivService, BackButton } from "./style";
+import { SectionContent, DivService, BackButton, H2Title } from "./style";
 import { IoIosArrowBack } from "react-icons/io";
 import FootterPage from "../footer/footerPage";
 
@@ -14,7 +14,7 @@ export const ServicesPage = () => {
           <IoIosArrowBack />
         </BackButton>
         <DivService>
-          <h2>Por que ter uma Landing Page?</h2>
+          <H2Title>Por que ter uma Landing Page?</H2Title>
           <p>
             <strong>Maximize Suas Conversões com uma Landing Page</strong>
             Você já se perguntou por que grandes empresas usam Landing Pages?
@@ -38,9 +38,9 @@ export const ServicesPage = () => {
           </p>
         </DivService>
         <DivService>
-          <h2>
+          <H2Title>
             <strong>A Importância do Tráfego Pago</strong>
-          </h2>
+          </H2Title>
           <p>
             Investir em tráfego pago é como acelerar o crescimento do seu
             negócio online. Imagine sua loja preferida: ela paga por anúncios
@@ -60,8 +60,8 @@ export const ServicesPage = () => {
             para dar um impulso ao seu negócio?
           </p>
         </DivService>
-        <FootterPage/>
       </SectionContent>
+      <FootterPage />
     </>
   );
 };

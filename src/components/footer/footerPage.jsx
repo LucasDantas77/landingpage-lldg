@@ -5,6 +5,7 @@ import {FooterContainer,
   H3Style,
   PTextStyled,
   IconInstagram,IconEmail} from './styled'
+import BackToTopButton from "../ButtonBack/buttonBack";
 const FootterPage = () => {
   return (
     <>
@@ -31,6 +32,10 @@ const FootterPage = () => {
           <PTextStyled>lldgcontato@gmail.com</PTextStyled>
           <PTextStyled>Instagram: @lldgcontato</PTextStyled>
         </DivContactsTwo>
+        <DivContacts>
+
+      <BackToTopButton/>
+        </DivContacts>
       </FooterContainer>
     </>
   );
