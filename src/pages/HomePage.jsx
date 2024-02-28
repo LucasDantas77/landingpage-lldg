@@ -3,6 +3,7 @@ import ButtonContact from "../components/whatsaapButton/whattsButton";
 import { MainPage } from "./style";
 import { Introducao } from "../components/Introducao/Intro";
 import { Carousel } from "../components/carrosel/carrosel";
+import FootterPage from "../components/footer/footerPage";
 
 const HomePage = () => {
   const images = [
@@ -18,7 +19,7 @@ const HomePage = () => {
       <Introducao />
       <Carousel images={images} />
       <ButtonContact />
-      {/* <FootterPage />  */}
+      <FootterPage /> 
     </MainPage>
   );
 };

@@ -12,6 +12,8 @@ export const Header = styled.header`
   color: #fff;
   align-items: center;
   background-color: #373737;
+  position:fixed;
+  top:0;
 
   img {
     width: 20%;

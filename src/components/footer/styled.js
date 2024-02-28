@@ -1,97 +1,69 @@
-import styled from "styled-components"
-
+import styled from "styled-components";
 
 export const ImageLogo = styled.img`
-width: 35%;
-max-width: 300px;
-height: 50px;
-border-radius: 100%;
+  width: 35%;
+  max-width: 300px;
+  height: 50px;
+  border-radius: 100%;
+`;
 
-// `
-// export const FooterContainer= styled.footer`
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   text-align: center;
-//   gap: 20px;
-//   flex-direction: column;
-//   width: 100%;
-//   height: 400px;
-//   background-color: var(--dark-grey);
+export const FooterContainer = styled.footer`
+  width: 100%;
+  max-width: 1330px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  border: 1px solid white;
+  border-radius: 2rem;
+  margin: 0 auto;
+  div > h3 > p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    color: #ffff;
+  }
 
-//   `
-//   // @media(min-width:764px) {
-//   //     footer-container {
-//   //          flex-direction: row;
-//   //          height: 200px;
-//   // }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 85%;
+    margin-left: -2rem;
+  }
+`;
+export const DivInfo = styled.div`
+  display: flex;
 
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    gap: 15px;
+  }
+`;
 
-// // .logoSaude {
-// //   display: flex;
-// //   flex-direction: column;
-// //   gap: 15px;
-// //   align-items: center;
-// // }
+export const DivContacts = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 11px;
+  justify-content: center;
+`;
 
-// // .logoSaude>img {
-// //   width: 55%;
-// //   max-width: 200px;
-// //   height: 60px;
-// //   object-fit: cover;
-// //   border-radius: 100%;
-// // }
+export const DivContactsTwo = styled.div`
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+`;
+export const H3Style = styled.h3`
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    color: #ffff;
+  
+`;
 
-// // .logoSaude>p {
-// //   color: var(--white);
-// // }
+export const PTextStyled = styled.p`
 
-// // .contatosfoo {
-// //   display: flex;
-// //   gap: 5px;
-// //   flex-direction: column;
-// //   align-items: center;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    color: #ffff;
+`;
 
-// // }
-
-// // .contatosfoo>div {
-// //   display: flex;
-// //   align-items: center;
-// //   justify-content: center;
-
-// // }
-
-// // .contatosfoo>div>a>img {
-// //   width: 55%;
-// //   max-width: 90px;
-// // }
-
-// // .contatosfoo>p {
-// //   color: var(--white);
-// // }
-
-// // .infoslldg {
-// //   display: flex;
-// //   flex-direction: column;
-// //   align-items: center;
-// //   gap: 10px;
-// // }
-
-// // .infoslldg>p {
-// //   color: var(--white);
-// // }
-
-// // .infoslldg>img {
-
-
-// // }
-
-
-
-// // @media(min-width:764px) {
-// //   .footer-container {
-// //       flex-direction: row;
-// //       height: 200px;
-
-// //   }
-// // }
