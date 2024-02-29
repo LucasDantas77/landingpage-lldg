@@ -12,7 +12,6 @@ const HeaderPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [mostrarSpinner, setMostrarSpinner] = useState(false);
   const navigate = useNavigate();
-
   const handle = (e) => {
     e.preventDefault();
     setMostrarSpinner(true);
