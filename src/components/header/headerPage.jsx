@@ -3,12 +3,23 @@ import { DivBtn, DivInfos, Header, LinksMobile } from "./style";
 import { RiApps2Line } from "react-icons/ri";
 import { useSpring, animated } from "react-spring";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { LoadingSpinner } from "../Loading/load";
 
 const AnimatedRiApps2Line = animated(RiApps2Line);
 
 const HeaderPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [mostrarSpinner, setMostrarSpinner] = useState(false);
+  const navigate = useNavigate();
+  const handle = (e) => {
+    e.preventDefault();
+    setMostrarSpinner(true);
+    setTimeout(() => {
+      navigate("/servicos");
+      setMostrarSpinner(false);
+    }, 5000);
+  };
 
   const iconAnimation = useSpring({
     transform: isOpen ? "rotate(90deg)" : "rotate(0deg)",
@@ -33,9 +44,7 @@ const HeaderPage = () => {
       <DivInfos>
         <a href="">Sobre-Nós</a>
         <a href="">Contatos</a>
-        <Link to="/servicos">
-          <a href="">Nossos Serviços</a>
-        </Link>
+        <Link onClick={handle}></Link>
       </DivInfos>
       <DivBtn onClick={handleClick} style={{ cursor: "pointer" }}>
         <AnimatedRiApps2Line style={iconAnimation} size={30} />
@@ -61,9 +70,13 @@ const HeaderPage = () => {
           >
             <LinksMobile href="#">Sobre-Nós</LinksMobile>
             <LinksMobile href="#">Contatos</LinksMobile>
-            <LinksMobile href="#">Nossos Serviços</LinksMobile>
+            <LinksMobile onClick={handle}>
+              {mostrarSpinner ? <LoadingSpinner /> : null}
+              <a href="">Nossos Serviços</a>
+            </LinksMobile>
           </animated.div>
         )}
+        {mostrarSpinner ? <LoadingSpinner /> : null}
       </DivBtn>
     </Header>
   );
