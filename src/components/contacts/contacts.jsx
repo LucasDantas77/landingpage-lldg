@@ -6,7 +6,7 @@ export const Contacts = () => {
   return (
     <>
       <ConteinerDiv>
-      <H2text>Entre Em Contato Por:</H2text>
+      <H2text>Entre em contato por:</H2text>
         <DivIcons>
 
         <a href="">

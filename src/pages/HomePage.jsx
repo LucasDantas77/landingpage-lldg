@@ -11,6 +11,7 @@ import image2 from "../assets/template2.png";
 import image3 from "../assets/template3.png";
 import image4 from "../assets/template4.png";
 import image5 from "../assets/template5.png";
+import { Planos } from "../components/Planos";
 const HomePage = () => {
   const images = [image1, image2, image3, image4, image5];
   return (
@@ -20,7 +21,8 @@ const HomePage = () => {
       <Carousel images={images} />
       <Sobre />
       <ButtonContact />
-      <Contacts/>
+      <Planos />
+      <Contacts />
       <FootterPage />
     </MainPage>
   );

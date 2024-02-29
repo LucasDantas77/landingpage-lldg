@@ -33,6 +33,7 @@ export const DivService = styled.div`
   flex-direction: column;
   gap: 10px;
   width: 50%;
+  margin-top: 35px;
   line-height: 25px;
   @media only screen and (max-width: 600px) {
     width: 80%;
@@ -40,17 +41,17 @@ export const DivService = styled.div`
   }
 `;
 export const BackButton = styled.button`
-position: fixed;
-    background-color: #ffd519;
-    color: #000;
-    font-weigth: bold;
-    border: none;
-    border-radius: 30%;
-    padding: 10px;
-    font-size: 20px;
-    margin-left: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  position: fixed;
+  background-color: #ffd519;
+  color: #000;
+  font-weigth: bold;
+  border: none;
+  border-radius: 30%;
+  padding: 10px;
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #2980b9;
