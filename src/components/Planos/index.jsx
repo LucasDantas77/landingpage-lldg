@@ -9,7 +9,7 @@ export const Planos = () => {
           🚀 Desperte o potencial do seu negócio com nossas promoções incríveis
           para o mês de março! 🌟 Adquira 5 templates pré-selecionados por
           apenas R$500 e ainda leve a hospedagem GRATUITA! Mas não para por aí -
-          garantimos a manutenção GRATUITA nos primeiros 5 meses. Transforme sua
+          garantimos a manutenção GRATUITA nos primeiros 3 meses. Transforme sua
           presença online com estilo e economia. A oportunidade bate à sua
           porta. Caso queira um site personalizado com suas ideias, faça um
           orçamento em venha ser Lldg, aproveite agora! 💻✨
