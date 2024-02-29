@@ -5,15 +5,13 @@ import { Introducao } from "../components/Introducao/Intro";
 import { Carousel } from "../components/carrosel/carrosel";
 import FootterPage from "../components/footer/footerPage";
 import { Sobre } from "../components/sobre";
-
+import image1 from "../assets/template1.jpg";
+import image2 from "../assets/template2.png";
+import image3 from "../assets/template3.png";
+import image4 from "../assets/template4.png";
+import image5 from "../assets/template5.png";
 const HomePage = () => {
-  const images = [
-    "./src/assets/template1.jpg",
-    "./src/assets/template2.png",
-    "./src/assets/template3.png",
-    "./src/assets/template4.png",
-    "./src/assets/template5.png",
-  ];
+  const images = [image1, image2, image3, image4, image5];
   return (
     <MainPage>
       <HeaderPage />
