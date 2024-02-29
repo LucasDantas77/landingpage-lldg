@@ -11,16 +11,15 @@ const moveUpDown = keyframes`
 
 export const ImageBtn = styled.img`
   position: fixed;
-  bottom: 20px; /* Ajuste conforme necessário */
-  right: 20px; /* Ajuste conforme necessário */
-  width: 50px; /* Ajuste conforme necessário */
-  height: auto; /* Para manter a proporção */
-  cursor: pointer; /* Adicionando um cursor indicando que é clicável */
+  bottom: 20px; 
+  right: 20px;
+  width: 50px; 
+  height: auto; 
+  cursor: pointer; 
 
-  animation: ${moveUpDown} 2s ease-in-out infinite; /* Aplicando a animação de subir e descer */
+  animation: ${moveUpDown} 2s ease-in-out infinite;
 
   @media (max-width: 768px) {
-    /* Ajustes para telas menores, se necessário */
     bottom: 10px;
     right: 10px;
   }

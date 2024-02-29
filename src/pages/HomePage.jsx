@@ -5,6 +5,7 @@ import { Introducao } from "../components/Introducao/Intro";
 import { Carousel } from "../components/carrosel/carrosel";
 import FootterPage from "../components/footer/footerPage";
 import { Sobre } from "../components/sobre";
+import { Contacts } from "../components/contacts/contacts";
 
 const HomePage = () => {
   const images = [
@@ -21,6 +22,7 @@ const HomePage = () => {
       <Carousel images={images} />
       <Sobre />
       <ButtonContact />
+      <Contacts/>
       <FootterPage />
     </MainPage>
   );
