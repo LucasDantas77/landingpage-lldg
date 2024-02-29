@@ -27,6 +27,7 @@ export const H2Title = styled.h2`
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   color: yellow;
+  line-height: 30px;
 `;
 export const DivService = styled.div`
   display: flex;
