@@ -40,7 +40,7 @@ export const DivService = styled.div`
   }
 `;
 export const BackButton = styled.button`
-position: fixed;
+
     background-color: #ffd519;
     color: #000;
     font-weigth: bold;
@@ -48,7 +48,7 @@ position: fixed;
     border-radius: 30%;
     padding: 10px;
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: -900px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 
@@ -57,10 +57,19 @@ position: fixed;
   }
 
   @media only screen and (max-width: 600px) {
-    font-size: 18px;
+    font-size: 20px;
+    width: 50px;
     padding: 8px;
     background-color: #ffd519;
     color: #000;
+    position: fixed;
+    margin: -4px 260px -13px 0px;
+    top: 100px;
+    bottom: 0;
+    left: 10px;
+    height: 44px;
+    right: 0px;
+
   }
 `;
 export const DivContentImagens = styled.div`
