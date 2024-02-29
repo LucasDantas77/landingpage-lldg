@@ -17,7 +17,7 @@ export const Sobre = () => {
       <p>Sobre-Nós</p>
       <DivSobre>
         <div>
-          <video ref={videoRef1} controls autoPlay loop>
+          <video ref={videoRef1} controls loop>
             <source src={video1} type="video/mp4" />
           </video>
           <button onClick={() => handleStartPlayback(videoRef1)}>
@@ -26,7 +26,7 @@ export const Sobre = () => {
         </div>
         <div>
           {" "}
-          <video ref={videoRef2} controls autoPlay loop>
+          <video ref={videoRef2} controls loop>
             <source src={video2} type="video/mp4" />
           </video>
           <button onClick={() => handleStartPlayback(videoRef2)}>
