@@ -6,10 +6,14 @@ width: 20px;
 height: 50px;
 border:none;
 border-radius:12px;
+background: #f1eded;
+font-size: 20px;
 
 @media only screen and (max-width: 600px) {
-    width:20px;
-    height:20px;
+    width: 30px;
+    height: 30px;
+    margin: -180px 0px 4px 270px;
+    font-size: 30px;
 }
 
 `;

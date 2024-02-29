@@ -9,6 +9,7 @@ export const SectionContent = styled.section`
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-bottom: 60px;
 
 @media only screen and (max-width: 600px) {
   margin-top: 100px;
@@ -19,6 +20,7 @@ export const SectionContent = styled.section`
     justify-content: center;
     text-align: center;
     font-size: 16px;
+    line-height: 15px;
 }
 
 `;
@@ -32,8 +34,10 @@ display: flex;
 flex-direction: column;
 gap: 10px;
 width: 50%;
+line-height: 25px;
 @media only screen and (max-width: 600px) {
   width:80%;
+  line-height: 25px;
 }
 
 `;
