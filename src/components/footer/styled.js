@@ -20,6 +20,7 @@ export const FooterContainer = styled.footer`
 width: 100%;
 height: 220px;
 display: flex;
+background-color: #373737;
 justify-content: space-around;
 border-top: 1px solid white;
   margin: 0 auto;
