@@ -15,10 +15,12 @@ export const Header = styled.header`
   z-index: 1;
 
   img {
-    width: 20%;
+    width: 70%;
     max-width: 70px;
     height: 50px;
     border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
   }
 `;
 

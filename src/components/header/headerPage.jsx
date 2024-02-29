@@ -37,7 +37,10 @@ const HeaderPage = () => {
 
   return (
     <Header>
-      <img src={Logolldg} alt="logo lldg" />
+      <Link to={"/"}>
+        <img src={Logolldg} alt="logo lldg" />
+      </Link>
+
       <DivInfos>
         <a href="">Contatos</a>
         <Link onClick={handle}>
