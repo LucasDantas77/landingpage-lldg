@@ -34,12 +34,16 @@ const HeaderPage = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+  const handleScrollContacts = (e) => {
+    e.preventDefault()
+    window.scrollTo({ top: 2005, behavior: 'smooth' });
+};
 
   return (
     <Header>
       <img src={Logolldg} alt="logo lldg" />
       <DivInfos>
-        <a href="">Contatos</a>
+        <a onClick={handleScrollContacts} href="">Contatos</a>
         <Link onClick={handle}>
           {mostrarSpinner ? <LoadingSpinner /> : 'Nossos Serviços'}
         </Link>
