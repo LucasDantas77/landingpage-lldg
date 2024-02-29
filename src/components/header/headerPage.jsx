@@ -34,6 +34,10 @@ const HeaderPage = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+  const handleScrollContacts = (e) => {
+    e.preventDefault()
+    window.scrollTo({ top: 2005, behavior: 'smooth' });
+};
 
   return (
     <Header>
@@ -42,7 +46,7 @@ const HeaderPage = () => {
       </Link>
 
       <DivInfos>
-        <a href="">Contatos</a>
+        <a onClick={handleScrollContacts} href="">Contatos</a>
         <Link onClick={handle}>
           {mostrarSpinner ? <LoadingSpinner /> : 'Nossos Serviços'}
         </Link>
@@ -69,7 +73,7 @@ const HeaderPage = () => {
               ...divInfosAnimation,
             }}
           >
-            <LinksMobile href="#">Contatos</LinksMobile>
+            <LinksMobile onClick={handleScrollContacts}>Contatos</LinksMobile>
             <LinksMobile onClick={handle}>
               {mostrarSpinner ? <LoadingSpinner /> : null}
               <a href="">Nossos Serviços</a>

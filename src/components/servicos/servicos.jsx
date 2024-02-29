@@ -36,11 +36,8 @@ export const ServicesPage = () => {
 
 
       <SectionContent>
-        {/* <BackButton>
-          <IoIosArrowBack />
-        </BackButton> */}
         <BackButton onClick={handleButtonClick} disabled={isLoading}>
-          {isLoading ? "Carregando..." : <IoIosArrowBack />}
+          {isLoading ? "" : <IoIosArrowBack />}
         </BackButton>
         {isLoading && <LoadingSpinner />}
 

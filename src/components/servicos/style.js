@@ -53,16 +53,24 @@ export const BackButton = styled.button`
   margin-left: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
   &:hover {
     background-color: #2980b9;
   }
 
   @media only screen and (max-width: 600px) {
-    font-size: 18px;
+    font-size: 20px;
+    width: 50px;
     padding: 8px;
     background-color: #ffd519;
     color: #000;
+    position: fixed;
+    margin: -4px 260px -13px 0px;
+    top: 100px;
+    bottom: 0;
+    left: 10px;
+    height: 44px;
+    right: 0px;
+
   }
 `;
 export const DivContentImagens = styled.div`
