@@ -18,7 +18,7 @@ const HeaderPage = () => {
     setTimeout(() => {
       navigate("/servicos");
       setMostrarSpinner(false);
-    }, 5000);
+    }, 3000);
   };
 
   const iconAnimation = useSpring({
@@ -39,7 +39,6 @@ const HeaderPage = () => {
     <Header>
       <img src={Logolldg} alt="logo lldg" />
       <DivInfos>
-        <a href="">Sobre-Nós</a>
         <a href="">Contatos</a>
         <Link onClick={handle}>
           {mostrarSpinner ? <LoadingSpinner /> : 'Nossos Serviços'}
@@ -67,7 +66,6 @@ const HeaderPage = () => {
               ...divInfosAnimation,
             }}
           >
-            <LinksMobile href="#">Sobre-Nós</LinksMobile>
             <LinksMobile href="#">Contatos</LinksMobile>
             <LinksMobile onClick={handle}>
               {mostrarSpinner ? <LoadingSpinner /> : null}
