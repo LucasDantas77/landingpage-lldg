@@ -73,7 +73,7 @@ const HeaderPage = () => {
               ...divInfosAnimation,
             }}
           >
-            <LinksMobile href="#">Contatos</LinksMobile>
+            <LinksMobile onClick={handleScrollContacts}>Contatos</LinksMobile>
             <LinksMobile onClick={handle}>
               {mostrarSpinner ? <LoadingSpinner /> : null}
               <a href="">Nossos Serviços</a>
