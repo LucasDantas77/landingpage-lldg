@@ -9,7 +9,7 @@ export const Contacts = () => {
       <H2text>Entre Em Contato Por:</H2text>
         <DivIcons>
 
-        <a href="">
+        <a href="https://api.whatsapp.com/send?phone=12978131357">
           <IconWpp />
         </a>
 
