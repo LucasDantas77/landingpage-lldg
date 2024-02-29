@@ -1,10 +1,14 @@
 import React from "react";
-import {FooterContainer,
-  DivInfo,DivContacts, 
+import {
+  FooterContainer,
+  DivInfo,
+  DivContacts,
   DivContactsTwo,
   H3Style,
   PTextStyled,
-  IconInstagram,IconEmail} from './styled'
+  IconInstagram,
+  IconEmail,
+} from "./styled";
 import BackToTopButton from "../ButtonBack/buttonBack";
 const FootterPage = () => {
   return (
@@ -17,12 +21,16 @@ const FootterPage = () => {
         <DivContacts>
           <PTextStyled>Siga e entre em contato!</PTextStyled>
           <div>
-            <a href="">
-              <IconInstagram/>
+            <a
+              href="https://www.instagram.com/lldgcontato/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconInstagram />
             </a>
 
-            <a href="">
-              <IconEmail/>
+            <a href="mailto:lldgcontato@gmail.com">
+              <IconEmail />
             </a>
           </div>
         </DivContacts>
@@ -33,8 +41,7 @@ const FootterPage = () => {
           <PTextStyled>Instagram: @lldgcontato</PTextStyled>
         </DivContactsTwo>
         <DivContacts>
-
-      <BackToTopButton/>
+          <BackToTopButton />
         </DivContacts>
       </FooterContainer>
     </>
