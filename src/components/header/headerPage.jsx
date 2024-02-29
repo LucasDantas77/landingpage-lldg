@@ -41,7 +41,9 @@ const HeaderPage = () => {
       <DivInfos>
         <a href="">Sobre-Nós</a>
         <a href="">Contatos</a>
-        <Link onClick={handle}></Link>
+        <Link onClick={handle}>
+          {mostrarSpinner ? <LoadingSpinner /> : 'Nossos Serviços'}
+        </Link>
       </DivInfos>
       <DivBtn onClick={handleClick} style={{ cursor: "pointer" }}>
         <AnimatedRiApps2Line style={iconAnimation} size={30} />
