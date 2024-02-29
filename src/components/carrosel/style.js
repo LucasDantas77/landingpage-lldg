@@ -58,7 +58,7 @@ export const Button = styled.button`
   background: transparent;
   border: none;
   cursor: pointer;
-  font-size: 48px; 
+  font-size: 40px; 
   color: yellow;
 
   ${(props) => (props.direction === "left" ? "left: 5px;" : "right: 5px;")}
