@@ -40,17 +40,17 @@ export const DivService = styled.div`
   }
 `;
 export const BackButton = styled.button`
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 30%;
-  padding: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+position: fixed;
+    background-color: #ffd519;
+    color: #000;
+    font-weigth: bold;
+    border: none;
+    border-radius: 30%;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
   &:hover {
     background-color: #2980b9;
@@ -59,6 +59,8 @@ export const BackButton = styled.button`
   @media only screen and (max-width: 600px) {
     font-size: 18px;
     padding: 8px;
+    background-color: #ffd519;
+    color: #000;
   }
 `;
 export const DivContentImagens = styled.div`

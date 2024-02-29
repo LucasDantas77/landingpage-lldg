@@ -17,6 +17,7 @@ import manu from "../../assets/manutencao.png";
 import respon from "../../assets/responsive.jpg";
 import siste from "../../assets/gerenciamento.jpg";
 import { LoadingSpinner } from "../Loading/load";
+import ButtonContact from "../whatsaapButton/whattsButton";
 export const ServicesPage = () => {
   const [isLoading, setIsLoading] = useState(false);
 
@@ -33,6 +34,7 @@ export const ServicesPage = () => {
     <>
       <HeaderPage />
 
+
       <SectionContent>
         {/* <BackButton>
           <IoIosArrowBack />
@@ -41,6 +43,7 @@ export const ServicesPage = () => {
           {isLoading ? "Carregando..." : <IoIosArrowBack />}
         </BackButton>
         {isLoading && <LoadingSpinner />}
+
         <DivService>
           <H2Title>Por que ter uma Landing Page?</H2Title>
           <p>
@@ -138,6 +141,7 @@ export const ServicesPage = () => {
             operacional.
           </Ptext>
         </DivContentImagens>
+        <ButtonContact/>
       </SectionContent>
       <FootterPage />
     </>
