@@ -6,7 +6,8 @@ import {
   BackButton,
   H2Title,
   DivContentImagens,
-  ImagesService,Ptext
+  ImagesService,
+  Ptext,
 } from "./style";
 import { IoIosArrowBack } from "react-icons/io";
 import FootterPage from "../footer/footerPage";
@@ -23,28 +24,30 @@ export const ServicesPage = () => {
   const handleButtonClick = () => {
     setIsLoading(true);
 
-    
     setTimeout(() => {
       setIsLoading(false);
-     
-      window.location.href = '/';
+
+      window.location.href = "/";
     }, 5000);
-  }
+  };
   return (
     <>
       <HeaderPage />
 
-      <BackButton onClick={handleButtonClick} disabled={isLoading}>
-        {isLoading ? 'Carregando...' : <IoIosArrowBack />}
-      </BackButton>
+
       <SectionContent>
-      {isLoading && (
-        <LoadingSpinner/>
-      )}
+        {/* <BackButton>
+          <IoIosArrowBack />
+        </BackButton> */}
+        <BackButton onClick={handleButtonClick} disabled={isLoading}>
+          {isLoading ? "Carregando..." : <IoIosArrowBack />}
+        </BackButton>
+        {isLoading && <LoadingSpinner />}
+
         <DivService>
           <H2Title>Por que ter uma Landing Page?</H2Title>
           <p>
-            <strong>Maximize Suas Conversões com uma Landing Page</strong>
+            <strong>Maximize Suas Conversões com uma Landing Page; </strong>
             Você já se perguntou por que grandes empresas usam Landing Pages?
             Simples: elas são como vitrines virtuais focadas em uma única
             oferta. Ter uma Landing Page direciona a atenção do visitante para a

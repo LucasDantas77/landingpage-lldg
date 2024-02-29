@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import { DivSobre, SectionSobre } from "./style";
-
+import video1 from "../../assets/Lucas Dantas Rodrigues.mp4";
+import video2 from "../../assets/Denis.mp4";
 export const Sobre = () => {
   const videoRef1 = useRef(null);
   const videoRef2 = useRef(null);
@@ -16,11 +17,8 @@ export const Sobre = () => {
       <p>Sobre-Nós</p>
       <DivSobre>
         <div>
-          <video ref={videoRef1} controls autoPlay loop>
-            <source
-              src="./src/assets/Lucas Dantas Rodrigues.mp4"
-              type="video/mp4"
-            />
+          <video ref={videoRef1} controls loop>
+            <source src={video1} type="video/mp4" />
           </video>
           <button onClick={() => handleStartPlayback(videoRef1)}>
             Iniciar Reprodução do Vídeo 1
@@ -28,8 +26,8 @@ export const Sobre = () => {
         </div>
         <div>
           {" "}
-          <video ref={videoRef2} controls autoPlay loop>
-            <source src="./src/assets/Denis.mp4" type="video/mp4" />
+          <video ref={videoRef2} controls loop>
+            <source src={video2} type="video/mp4" />
           </video>
           <button onClick={() => handleStartPlayback(videoRef2)}>
             Iniciar Reprodução do Vídeo 2

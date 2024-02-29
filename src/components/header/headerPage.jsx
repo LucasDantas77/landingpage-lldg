@@ -41,7 +41,10 @@ const HeaderPage = () => {
 
   return (
     <Header>
-      <img src={Logolldg} alt="logo lldg" />
+      <Link to={"/"}>
+        <img src={Logolldg} alt="logo lldg" />
+      </Link>
+
       <DivInfos>
         <a onClick={handleScrollContacts} href="">Contatos</a>
         <Link onClick={handle}>
