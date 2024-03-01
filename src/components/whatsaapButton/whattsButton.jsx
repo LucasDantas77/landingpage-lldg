@@ -8,7 +8,7 @@ const ButtonContact = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <ImageBtn src={Wpp} alt="" />
+      <ImageBtn src={Wpp} alt="imagem whatsaap" />
     </a>
   );
 };

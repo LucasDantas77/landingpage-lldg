@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 const moveUpDown = keyframes`
   0%, 100% {
     transform: translateY(0);
@@ -8,14 +8,13 @@ const moveUpDown = keyframes`
   }
 `;
 
-
 export const ImageBtn = styled.img`
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   right: 20px;
-  width: 50px; 
-  height: auto; 
-  cursor: pointer; 
+  width: 50px;
+  height: auto;
+  cursor: pointer;
 
   animation: ${moveUpDown} 2s ease-in-out infinite;
 

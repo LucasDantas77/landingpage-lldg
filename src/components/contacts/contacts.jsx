@@ -15,7 +15,10 @@ export const Contacts = () => {
       <ConteinerDiv>
         <H2text>Entre em contato por:</H2text>
         <DivIcons>
-          <a href="https://api.whatsapp.com/send?phone=12978131357">
+          <a
+            href="https://api.whatsapp.com/send?phone=12978131357"
+            rel="noopener noreferrer"
+          >
             <IconWpp style={{ fontSize: "40px" }} />
           </a>
 
@@ -26,7 +29,7 @@ export const Contacts = () => {
           >
             <IconInstagram style={{ fontSize: "40px" }} />
           </a>
-          <a href="mailto:lldgcontato@gmail.com">
+          <a href="mailto:lldgcontato@gmail.com" rel="noopener noreferrer">
             <IconEmail style={{ fontSize: "40px" }} />
           </a>
         </DivIcons>

@@ -29,7 +29,7 @@ const FootterPage = () => {
               <IconInstagram />
             </a>
 
-            <a href="mailto:lldgcontato@gmail.com">
+            <a href="mailto:lldgcontato@gmail.com" rel="noopener noreferrer">
               <IconEmail />
             </a>
           </div>

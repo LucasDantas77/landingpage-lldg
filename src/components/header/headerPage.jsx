@@ -35,10 +35,9 @@ const HeaderPage = () => {
     setIsOpen(!isOpen);
   };
   const handleScrollContacts = (e) => {
-    e.preventDefault()
-    window.scrollTo({ top: 3005, behavior: 'smooth' });
-};
-
+    e.preventDefault();
+    window.scrollTo({ top: 3005, behavior: "smooth" });
+  };
   return (
     <Header>
       <Link to={"/"}>
@@ -46,9 +45,11 @@ const HeaderPage = () => {
       </Link>
 
       <DivInfos>
-        <a onClick={handleScrollContacts} href="">Contatos</a>
+        <a onClick={handleScrollContacts} href="">
+          Contatos
+        </a>
         <Link onClick={handle}>
-          {mostrarSpinner ? <LoadingSpinner /> : 'Nossos Serviços'}
+          {mostrarSpinner ? <LoadingSpinner /> : "Nossos Serviços"}
         </Link>
       </DivInfos>
       <DivBtn onClick={handleClick} style={{ cursor: "pointer" }}>
