@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const ImgLogo = styled.img`
   width: 50%; /* Alterado para 100% para tornar responsivo */
   max-width: 450px;

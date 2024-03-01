@@ -12,7 +12,7 @@ export const Introducao = () => {
   return (
     <Container>
       <SectionContainer>
-        <ImgLogo src={LogoLLDG} alt="" />
+        <ImgLogo src={LogoLLDG} alt="logo LLDG" />
         <Text>
           Bem-vindo à LLDG - Sua Jornada Digital Começa Aqui! Na LLDG, não somos
           apenas uma empresa de marketing digital e desenvolvimento web; somos
