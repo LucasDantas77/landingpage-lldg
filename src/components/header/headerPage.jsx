@@ -36,7 +36,7 @@ const HeaderPage = () => {
   };
   const handleScrollContacts = (e) => {
     e.preventDefault()
-    window.scrollTo({ top: 2005, behavior: 'smooth' });
+    window.scrollTo({ top: 3005, behavior: 'smooth' });
 };
 
   return (
