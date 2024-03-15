@@ -17,7 +17,7 @@ export const Planos = () => {
         </p>
       </div>
       <div>
-        <h3>Alcance Novos Horizontes Online: Gestão trafego pago por R$150!</h3>
+        <h3>Alcance Novos Horizontes Online: Gestão trafego pago por R$100!</h3>
         <p>
           Impulsione seu site com nossa gestão de tráfego pago por apenas R$100!
           Atraia visitantes genuínos e aumente sua visibilidade online.
